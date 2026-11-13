@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LingLee Learning Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="LingLee home">
+        <span class="brand-mark">L</span>
+        <span>LingLee</span>
+      </a>
+
+      <nav class="navigation" aria-label="Main navigation">
+        <a class="nav-link active" href="#"><span class="nav-icon">▦</span>Dashboard</a>
+        <a class="nav-link" href="#"><span class="nav-icon">▱</span>Classes</a>
+        <a class="nav-link" href="#"><span class="nav-icon">▤</span>Resources</a>
+        <a class="nav-link" href="#"><span class="nav-icon">▣</span>Learning plan</a>
+        <a class="nav-link" href="#"><span class="nav-icon">♡</span>Chat<span class="notification-dot"></span></a>
+        <a class="nav-link" href="#"><span class="nav-icon">⚙</span>Settings</a>
+      </nav>
+
+      <section class="upgrade-card">
+        <div class="books" aria-hidden="true">▰</div>
+        <p>Upgrade to <strong>PRO</strong> for more resources.</p>
+        <a class="upgrade-button" href="#">Upgrade</a>
+      </section>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <h1>Dashboard</h1>
+        <div class="topbar-tools">
+          <span>20 Sep 2019, Friday</span>
+          <button class="search-button" type="button" aria-label="Search">⌕</button>
+        </div>
+      </header>
+
+      <section class="welcome-banner" aria-labelledby="welcome-title">
+        <div class="welcome-copy">
+          <h2 id="welcome-title">Welcome back Anna!</h2>
+          <p>You've learned 80% of your goal this week!<br>Keep it up and improve your results!</p>
+        </div>
+        <div class="welcome-art" aria-hidden="true">
+          <span class="chat-bubble bubble-blue"></span>
+          <span class="chat-bubble bubble-pink"></span>
+          <span class="person-hair"></span>
+          <span class="person-face"></span>
+          <span class="person-body"></span>
+          <span class="person-laptop"></span>
+          <span class="art-table"></span>
+        </div>
+      </section>
+
+      <div class="learning-grid">
+        <section class="panel results-panel">
+          <div class="panel-heading">
+            <h2>Latest results</h2>
+            <a href="#">More <span aria-hidden="true">→</span></a>
+          </div>
+          <ul class="results-list">
+            <li><span>Unit 5 - <span class="muted">Technology</span></span><span class="result-track"><i style="width: 25%"></i></span><strong class="coral-text">25%</strong></li>
+            <li><span>Unit 12 - <span class="muted">Ecology</span></span><span class="result-track blue"><i style="width: 44%"></i></span><strong class="blue-text">44%</strong></li>
+            <li><span>Unit 9 - <span class="muted">Real estate</span></span><span class="result-track blue"><i style="width: 40%"></i></span><strong class="blue-text">40%</strong></li>
+            <li><span>Unit 8 - <span class="muted">Education</span></span><span class="result-track"><i style="width: 18%"></i></span><strong class="coral-text">18%</strong></li>
+            <li><span>Unit 16 - <span class="muted">Job market</span></span><span class="result-track blue"><i style="width: 76%"></i></span><strong class="blue-text">76%</strong></li>
+          </ul>
+        </section>
+
+        <section class="panel time-panel">
+          <div class="panel-heading">
+            <h2>Time spent on learning</h2>
+            <a href="#">Last week <span aria-hidden="true">⌄</span></a>
+          </div>
+          <div class="chart" role="img" aria-label="Weekly learning time: vocabulary, grammar, listening and writing">
+            <div class="chart-day"><span>Mon</span><i><b class="vocab" style="height: 30%"></b><b class="grammar" style="height: 45%"></b><b class="listening" style="height: 55%"></b><b class="writing" style="height: 20%"></b></i></div>
+            <div class="chart-day"><span>Tue</span><i><b class="vocab" style="height: 22%"></b><b class="grammar" style="height: 50%"></b><b class="listening" style="height: 48%"></b><b class="writing" style="height: 32%"></b></i></div>
+            <div class="chart-day"><span>Wed</span><i><b class="vocab" style="height: 18%"></b><b class="grammar" style="height: 40%"></b><b class="listening" style="height: 56%"></b><b class="writing" style="height: 30%"></b></i></div>
+            <div class="chart-day"><span>Thu</span><i><b class="vocab" style="height: 28%"></b><b class="grammar" style="height: 44%"></b><b class="listening" style="height: 52%"></b><b class="writing" style="height: 25%"></b></i></div>
+            <div class="chart-day"><span>Fri</span><i><b class="vocab" style="height: 20%"></b><b class="grammar" style="height: 35%"></b><b class="listening" style="height: 60%"></b><b class="writing" style="height: 28%"></b></i></div>
+            <div class="chart-day"><span>Sat</span><i><b class="vocab" style="height: 35%"></b><b class="grammar" style="height: 44%"></b><b class="listening" style="height: 42%"></b><b class="writing" style="height: 30%"></b></i></div>
+            <div class="chart-day"><span>Sun</span><i><b class="vocab" style="height: 24%"></b><b class="grammar" style="height: 38%"></b><b class="listening" style="height: 50%"></b><b class="writing" style="height: 32%"></b></i></div>
+          </div>
+          <ul class="chart-legend">
+            <li><i class="vocab"></i>Vocabulary</li>
+            <li><i class="grammar"></i>Grammar</li>
+            <li><i class="listening"></i>Listening</li>
+            <li><i class="writing"></i>Writing</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="courses-section">
+        <div class="panel-heading">
+          <h2>Your courses</h2>
+          <a href="#">More <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="course-list">
+          <a class="course-card english" href="#"><span class="level">B2</span><span><small>Business English</small><strong>Grammar</strong></span><b>→</b></a>
+          <a class="course-card phrasal" href="#"><span class="level">B2</span><span><small>Common English</small><strong>Phrasal verbs</strong></span><b>→</b></a>
+          <a class="course-card spanish" href="#"><span class="level">C1</span><span><small>Business Spanish</small><strong>Vocabulary</strong></span><b>→</b></a>
+        </div>
+      </section>
+    </main>
+
+    <aside class="profile-sidebar">
+      <div class="logout-row"><a href="#">Logout</a><span aria-hidden="true">↪</span></div>
+      <section class="profile">
+        <div class="avatar" aria-hidden="true"><span>♟</span><b>+</b></div>
+        <h2>Anna Morrison</h2>
+        <p>Student</p>
+      </section>
+      <section class="subjects" aria-label="Your subjects">
+        <div class="subject-row"><span class="subject-level">B2</span><span class="subject-name"><strong>English</strong><small>High intermediate</small></span><i class="progress"><b style="width: 70%"></b></i></div>
+        <div class="subject-row"><span class="subject-level">C1</span><span class="subject-name"><strong>Spanish</strong><small>Advanced</small></span><i class="progress"><b style="width: 85%"></b></i></div>
+      </section>
+      <section class="reminders">
+        <div class="panel-heading"><h2>Reminders</h2><span class="reminder-bell">♧<i></i></span></div>
+        <ul class="reminder-list">
+          <li><span class="reminder-icon pink">◷</span><span><strong>Eng - Vocabulary test</strong><small>24 Sep 2019, Friday</small></span></li>
+          <li><span class="reminder-icon blue">▣</span><span><strong>Eng - Send grammar homework</strong><small>29 Sep 2019, Wednesday</small></span></li>
+          <li><span class="reminder-icon blue">▣</span><span><strong>Spanish - Send essay</strong><small>05 Oct 2019, Monday</small></span></li>
+          <li><span class="reminder-icon pale">▣</span><span><strong>Spanish - Reading task</strong><small>10 Oct 2019, Saturday</small></span></li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+</body>
+</html>
